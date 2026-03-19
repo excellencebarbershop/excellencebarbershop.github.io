@@ -1,0 +1,2287 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Angelika Raubo Studio Fryzjerskie</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" sizes="32x32" href="img/LogoBgCanvaBlack.png">
+<link rel="icon" type="image/png" sizes="16x16" href="LOGO.png">
+<link rel="apple-touch-icon" href="LOGO.png">
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Petit+Formal+Script&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+
+  <!-- SEO -->
+<meta name="description" content="Angelika Raubo Studio Fryzjerskie – profesjonalne usługi fryzjerskie. Strzyżenie damskie i męskie, koloryzacja, stylizacja oraz pielęgnacja włosów w przyjaznej atmosferze.">
+<meta name="keywords" content="Angelika Raubo Studio Fryzjerskie, fryzjer, salon fryzjerski, strzyżenie damskie, strzyżenie męskie, koloryzacja włosów, stylizacja włosów, fryzjer Bolszewo">
+
+  <!-- Open Graph (Facebook, LinkedIn, Instagram) -->
+<meta property="og:title" content="Angelika Raubo Studio Fryzjerskie – Salon Fryzjerski">
+<meta property="og:description" content="Profesjonalne usługi fryzjerskie: strzyżenie, koloryzacja, stylizacja i pielęgnacja włosów. Umów wizytę w Angelika Raubo Studio Fryzjerskie.">
+<meta property="og:image" content="angelikaraubostudiofryzjerskie.github.io/img/LogoBgCanvaBlack.png">
+<meta property="og:url" content="https://angelikaraubostudiofryzjerskie.github.io/">
+<meta property="og:type" content="website">
+
+  <!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Angelika Raubo Studio Fryzjerskie – Salon Fryzjerski">
+<meta name="twitter:description" content="Strzyżenie, koloryzacja i profesjonalna pielęgnacja włosów w Angelika Raubo Studio Fryzjerskie.">
+<meta name="twitter:image" content="https://angelikaraubostudiofryzjerskie.github.io/img/LogoBgCanvaBlack.png">
+
+  <!-- Structured Data JSON-LD (dla Google Rich Results i Google Card) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Angelika Raubo",
+    "url": "https://angelikaraubostudiofryzjerskie.github.io/",
+    "image": "angelikaraubostudiofryzjerskie.github.io/img/LogoBgCanvaBlack.png",
+    "jobTitle": "Professional hairdressing services / Profesjonalne usługi fryzjerskie",
+    "sameAs": [
+      "https://instagram.com/",
+      "https://linkedin.com/",
+      "https://tiktok.com/"
+    ]
+  }
+  </script>
+<style>
+/* ===== 1) Reset + globalne podstawy ===== */
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--mobile-header-h:3.625rem}
+html{font-size:16px;scroll-behavior:smooth}
+body{
+  font-family:"Inter",sans-serif;
+  background:#0e1116;
+  color:#fff;
+  overflow-x:hidden;
+  scroll-snap-type:y mandatory;
+}
+section{
+  min-height:100vh;
+  width:100%;
+  position:relative;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  scroll-snap-align:start;
+  overflow:hidden;
+}
+.content{position:relative;z-index:3;max-width:75rem;padding:2.5rem}
+h1{font-size:clamp(2.25rem,6vw,4rem);font-weight:700;margin-bottom:2.25rem}
+p{font-size:clamp(1rem,2vw,1.25rem);opacity:.85;line-height:1.6}
+
+/* ===== 2) Przyciski / CTA ===== */
+.actions{margin-top:2rem;display:inline-flex;align-items:center;gap:.875rem;flex-wrap:wrap;justify-content:center}
+.salon-btn{
+  position:relative;display:inline-flex;align-items:center;justify-content:center;
+  height:3rem;padding:0 3.25rem;font-size:.75rem;letter-spacing:.125rem;text-transform:uppercase;
+  color:#f7f7f7;text-decoration:none;border-radius:62.4375rem;
+  background:linear-gradient(135deg,rgba(255,255,255,.04),rgba(0,0,0,0)),linear-gradient(180deg,#0f1115,#0a0c0f);
+  border:.125rem solid rgb(52 52 52);
+  box-shadow:0 .625rem 1.875rem rgba(0,0,0,.45),inset 0 0 0 .0625rem rgba(255,255,255,.04);
+  transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease;
+}
+.salon-btn::before{content:"";position:absolute;inset:.0625rem;border-radius:inherit;background:linear-gradient(90deg,rgba(212,175,55,.18),rgba(255,255,255,.05) 35%,rgba(212,175,55,.18));opacity:.35;pointer-events:none}
+.salon-btn:hover{transform:translateY(-.125rem);border-color:rgba(53,53,53,.55);box-shadow:0 .875rem 2.125rem rgba(0,0,0,.55),inset 0 0 0 .0625rem rgba(255,255,255,.08)}
+.booksy-btn{gap:.625rem;padding:0 2.25rem}
+.booksy-logo{height:1.3125rem;width:auto;display:block}
+.stars-btn{padding:0 2.25rem;gap:.5rem}
+.stars-wrap{display:inline-flex;gap:.1875rem}
+.star{width:.5625rem;height:.5625rem;background:url('data:image/svg+xml;utf8,<svg fill="%23ffffff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431L24 9.748l-6 5.847 1.417 8.257L12 19.771 4.583 23.852 6 15.595 0 9.748l8.332-1.73z"/></svg>') no-repeat center/contain;opacity:.9}
+.by-google{font-size:.6875rem;letter-spacing:.0625rem;opacity:.8;text-transform:lowercase}
+
+/* ===== 3) Tła sekcji + warstwy parallax ===== */
+.layer{position:absolute;inset:0;background-position:center;background-size:cover;will-change:transform}
+.layer::after{content:"";position:absolute;inset:0;background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.85))}
+#s1 .layer{background-image:url("bgoff.jpeg")}
+#s2{background:#fff;color:#111}
+#services{background:#000;color:#fff}
+#contact{
+  min-height:clamp(34rem,70vh,54rem);
+  color:#fff;
+  background:url("https://d375139ucebi94.cloudfront.net/region2/pl/161624/biz_photo/34ecde84b90840e9aa91f48e75389c-e-xcellence-barber-shop-by-erc-biz-photo-0b120b024a6c487abc89c6774f0f85-booksy.jpeg") center/cover no-repeat;
+  padding:2.5rem 0 1.25rem;
+}
+#contact::after{content:"";position:absolute;inset:0;background:linear-gradient(rgba(0, 0, 0, 0.433),rgba(0,0,0,.88));z-index:1}
+.depth-1{z-index:0;opacity:.45}.depth-2{z-index:1;opacity:.7}.depth-3{z-index:2}
+
+/* ===== 4) Nawigacja desktop + mobile ===== */
+.navbar{
+  position:fixed;top:0;left:0;width:100%;z-index:1000;min-height:3.625rem;
+  padding:.5rem 3.75rem;display:flex;align-items:center;justify-content:space-between;
+  background:transparent;transition:background .28s ease,backdrop-filter .28s ease,padding .25s ease;
+}
+.navbar.scrolled{background:rgba(0,0,0,.95);backdrop-filter:blur(.5rem)}
+.nav-logo{display:flex;align-items:center;line-height:0}
+.nav-logo img{display:block;height:2.625rem;width:auto}
+.desktop-nav a{color:#fff;text-decoration:none;margin-left:1.75rem;font-size:.9375rem;opacity:.82;transition:opacity .2s ease}
+.desktop-nav a:hover{opacity:1}
+
+.hamburger{display:none;width:2rem;height:2rem;align-items:center;justify-content:center;cursor:pointer;z-index:1100}
+.hamburger-input{display:none}
+.hamburger-icon{display:block;width:2rem;height:2rem;transition:transform .5s}
+.hamburger-input:checked + .hamburger-icon{transform:rotate(-45deg)}
+.line-top-bottom{transition:stroke-dasharray .6s cubic-bezier(.4,0,.2,1),stroke-dashoffset .6s cubic-bezier(.4,0,.2,1);stroke-dasharray:12 63}
+.hamburger-input:checked + .hamburger-icon .line-top-bottom{stroke-dasharray:20 300;stroke-dashoffset:-32.42}
+
+.mobile-nav-panel{
+  position:fixed;top:3.625rem;left:0;width:100%;height:calc(100vh - 3.625rem);
+  background:rgba(0,0,0,.95);backdrop-filter:blur(.5rem);z-index:999;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1.375rem;
+  transform:translateY(-110%);opacity:0;pointer-events:none;
+  transition:transform .5s ease,opacity .5s ease;
+}
+.mobile-nav-panel.open{transform:translateY(0);opacity:1;pointer-events:auto}
+.mobile-nav-panel a{color:#fff;text-decoration:none;font-size:1.125rem;letter-spacing:.02rem}
+body.menu-open{overflow:hidden}
+
+/* ===== 5) Kropki nawigacyjne sekcji ===== */
+.nav-indicator{position:fixed;right:clamp(.625rem,2vw,1.375rem);top:50%;transform:translateY(-50%);z-index:60;display:flex;flex-direction:column;gap:clamp(.625rem,1.4vh,.875rem);mix-blend-mode:difference}
+.dot{position:relative;width:clamp(.375rem,.7vw,.5625rem);height:clamp(.375rem,.7vw,.5625rem);border-radius:50%;background:#fff;border:none;cursor:pointer;opacity:.65;transition:transform .22s ease,opacity .22s ease}
+.dot::before{content:"";position:absolute;inset:-.5rem}
+.dot.active{transform:scale(1.45);opacity:1}
+@media (hover:hover){.dot:hover{transform:scale(1.25);opacity:1}}
+
+/* ===== 6) Cennik ===== */ #s2 .content{max-width:75rem;text-align:left} .pricing-wrap{ display:grid; grid-template-columns:minmax(23.75rem,1.2fr) minmax(17.5rem,.8fr); gap:2.875rem; align-items:start } .pricing-card{ position:relative; background:#fff; border:.0625rem solid rgba(0,0,0,.08); border-radius:1.125rem; box-shadow:0 1.5rem 4.375rem rgba(0,0,0,.12); overflow:hidden; transform:translateY(1.25rem); opacity:0; transition:opacity .6s ease,transform .7s cubic-bezier(.2,.8,.2,1) } .pricing-card.revealed{ opacity:1; transform:translateY(0) } .pricing-header{ display:flex; justify-content:space-between; align-items:center; gap:1.25rem; padding:1.375rem 1.625rem .5rem; background:#fff; position:sticky; top:0; z-index:2 } .pricing-card h2{ font-size:1.375rem; color:#111 } .pricing-tabs{ display:flex; gap:.5rem } .pricing-tabs .tab{ height:2rem; padding:0 1.125rem; border-radius:62.4375rem; font-size:.6875rem; letter-spacing:.0875rem; text-transform:uppercase; cursor:pointer; background:#f3f3f3; border:.0625rem solid rgba(0,0,0,.15); color:#111; transition:.25s ease } .pricing-tabs .tab:hover{background:#e8e8e8} .pricing-tabs .tab.active{ background:#111; color:#fff; border-color:#111 } .pricing-scroll{ max-height:58vh; overflow:auto; padding-bottom:.625rem } .pricing-table{ width:100%; border-collapse:separate; border-spacing:0 .625rem; font-size:.9375rem; color:#111; table-layout:fixed; padding:0 .9rem } .pricing-table tr{ position:relative; opacity:0; transform:translateY(.5rem); transition:opacity .5s ease,transform .6s ease; } .pricing-table tr.row-reveal{ opacity:1; transform:translateY(0); } /* ✅ usunięty border komórek */ .pricing-table td{ padding:.9375rem 1.125rem; background:#fafafa; border:none; vertical-align:middle; } .pricing-table td:first-child{ border-radius:.75rem 0 0 .75rem; font-weight:500 } .pricing-table td:last-child{ border-radius:0 .75rem .75rem 0; text-align:right; font-weight:600; white-space:normal } .pricing-table td:last-child>.row-cta{ display:inline-flex; align-items:center; justify-content:center; height:1.5rem; padding:0 .5625rem; border-radius:62.4375rem; font-size:.5rem; letter-spacing:.05rem; text-transform:uppercase; text-decoration:none; background:#111; color:#fff; margin:0 .375rem 0 0; vertical-align:middle } .pricing-table td:last-child>div{ display:inline-flex; flex-direction:column; align-items:flex-end; line-height:1.1; vertical-align:middle } .price{font-weight:600;font-size:.75rem} .time{margin-top:.125rem;font-size:.625rem;opacity:.6} /* ✅ WYŁĄCZONE pseudo-bordery */ .pricing-table tr::after{content:none} .pricing-table tr::before{content:none} .pricing-note{ padding:.625rem .75rem .875rem; font-size:.625rem; color:rgba(17,17,17,.6) } .pricing-note .emoji{ float:right; color:#fc0; line-height:1 } .pricing-text{ opacity:0; transform:translateY(1rem); transition:opacity .6s ease,transform .6s ease; margin-top:1rem; margin-left:2rem } .pricing-text.revealed{ opacity:1; transform:translateY(0) } .pricing-text h2{ font-size:1.625rem; margin-bottom:.875rem; color:#111 } .pricing-text p{ color:#111; opacity:.72 }
+
+/* ===== 7) Zespół ===== */
+#team{background:#000;color:#fff;padding:6.25rem 0}
+.services-track{display:grid;grid-template-columns:repeat(4,1fr);gap:2rem;margin-top:3.125rem}
+.service-card{position:relative;border-radius:1.125rem;overflow:hidden;box-shadow:0 .875rem 2.5rem rgba(0,0,0,.45);transform:translateY(2.5rem);opacity:0;transition:all .7s ease}
+.service-card img{width:100%;height:28.75rem;object-fit:cover;transition:transform .7s ease}
+.service-card:hover img{transform:scale(1.06)}
+.card-overlay{position:absolute;inset:0;background:linear-gradient(to bottom,rgba(0,0,0,.05) 10%,rgba(0,0,0,.55) 60%,rgba(0,0,0,.85) 100%);opacity:0;transition:opacity .4s ease;display:flex;align-items:flex-end}
+.service-card:hover .card-overlay{opacity:1}
+.overlay-inner{padding:1.875rem;margin-bottom:5.625rem;transform:translateY(1.25rem);transition:transform .4s ease}
+.service-card:hover .overlay-inner{transform:translateY(0)}
+.overlay-inner h3{font-size:1.375rem;text-align:center}
+.overlay-inner p{font-size:.875rem;line-height:1.6;opacity:.95;text-align:center}
+.card-name{position:absolute;bottom:1.125rem;left:50%;transform:translateX(-50%);padding:.4375rem 3.125rem;border:.125rem solid rgba(255,255,255,.9);background:rgba(0,0,0,.35);backdrop-filter:blur(.375rem);color:#fff;font-size:1.25rem;z-index:3;letter-spacing:.03rem;border-radius:.75rem}
+/* ===== TEAM – ulepszone animacje ===== */
+.service-card{
+  position:relative;
+  border-radius:1.125rem;
+  overflow:hidden;
+  box-shadow:0 .875rem 2.5rem rgba(0,0,0,.45);
+
+  transform:translateY(4rem) scale(.96);
+  opacity:0;
+
+  transition:
+  transform 1s cubic-bezier(.16,1,.3,1),
+  opacity .9s ease;
+}
+
+.service-card.visible{
+  transform:translateY(0) scale(1);
+  opacity:1;
+}
+
+.service-card img{
+  width:100%;
+  height:28.75rem;
+  object-fit:cover;
+  transition:transform 1.2s cubic-bezier(.16,1,.3,1);
+}
+
+.service-card:hover img{
+  transform:scale(1.06);
+}
+
+/* overlay */
+.card-overlay{
+  position:absolute;
+  inset:0;
+  background:linear-gradient(
+  to bottom,
+  rgba(0,0,0,.05) 10%,
+  rgba(0,0,0,.55) 60%,
+  rgba(0,0,0,.85) 100%);
+  opacity:0;
+  transition:opacity .45s ease;
+  display:flex;
+  align-items:flex-end;
+}
+
+.service-card:hover .card-overlay{
+  opacity:1;
+}
+
+.overlay-inner{
+  padding:1.875rem;
+  margin-bottom:5.625rem;
+  transform:translateY(2rem);
+  transition:transform .45s ease;
+}
+
+.service-card:hover .overlay-inner{
+  transform:translateY(0);
+}
+
+/* kliknięcie mobile */
+.service-card.active .card-overlay{
+  opacity:1;
+}
+
+.service-card.active .overlay-inner{
+  transform:translateY(0);
+}
+
+
+/* ===== MOBILE TEAM ===== */
+@media (max-width:64rem){
+
+.services-track{
+  grid-template-columns:repeat(2,1fr);
+  gap:1.4rem;
+}
+
+.service-card img{
+  height:22rem;
+}
+
+.overlay-inner{
+  margin-bottom:4rem;
+}
+
+}
+
+/* małe telefony */
+@media (max-width:34rem){
+
+.services-track{
+  grid-template-columns:1fr;
+}
+
+.service-card img{
+  height:24rem;
+}
+
+}
+
+
+
+
+
+
+
+
+/* ===== 8) Galeria ===== */
+#gallery{
+  background:#fff;
+  padding:12vh 0;
+  display:flex;
+  justify-content:center;
+  color:#000
+}
+
+#gallery h1{
+  text-align:center;
+  margin-bottom:6vh
+}
+
+.gallery-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  grid-auto-rows:22vh;
+  gap:1.6rem;
+
+  /* 🔑 stabilizacja layoutu */
+  contain: layout paint;
+}
+
+.gallery-item,
+.gallery-more{
+  position:relative;
+  overflow:hidden;
+  border-radius:1.2rem;
+  box-shadow:0 1.6rem 3.6rem rgba(0,0,0,.2);
+
+  /* 🔥 zmiana: tylko opacity + scale */
+  opacity:0;
+  transform:scale(0.96);
+
+  transition:
+    opacity .6s ease,
+    transform .6s ease,
+    box-shadow 1.4s ease-in-out;
+
+  will-change: transform, opacity;
+  backface-visibility:hidden;
+}
+
+.gallery-item .img-wrap{
+  width:100%;
+  height:100%;
+  overflow:hidden
+}
+
+.gallery-item img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center;
+  display:block;
+
+  transition:transform .7s ease;
+  transform:scale(1)
+}
+
+.gallery-item:not(.tall):not(.wide) img{
+  transform:scale(1.05)
+}
+
+.gallery-item.tall{grid-row:span 2}
+.gallery-item.wide{grid-column:span 2}
+
+.gallery-item::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(to bottom,rgba(0,0,0,0) 40%,rgba(0,0,0,.75) 100%);
+  opacity:0;
+  transition:.4s ease
+}
+
+.gallery-item figcaption{
+  position:absolute;
+  left:1.6rem;
+  bottom:1.6rem;
+  font-size:.85rem;
+  letter-spacing:.2em;
+  text-transform:uppercase;
+  color:#fff;
+
+  opacity:0;
+  transform:translateY(.8rem);
+  transition:.4s ease
+}
+
+/* 🔥 hover działa tylko po pojawieniu */
+.gallery-item.is-visible:hover{
+  transform:scale(1.02) translateY(-.4rem);
+  box-shadow:0 2.4rem 5rem rgba(0,0,0,.35)
+}
+
+.gallery-item:hover img{
+  transform:scale(1.08)!important
+}
+
+.gallery-item:hover::after,
+.gallery-item:hover figcaption{
+  opacity:1;
+  transform:translateY(0)
+}
+
+/* ===== MORE BOX ===== */
+.gallery-more{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  color:#f7f7f7;
+  text-decoration:none;
+
+  background:
+    linear-gradient(135deg,rgba(255,255,255,.04),rgba(0,0,0,0)),
+    linear-gradient(180deg,#0f1115,#0a0c0f);
+
+  border:.125rem solid rgb(52,52,52);
+  box-shadow:
+    0 .625rem 1.875rem rgba(0,0,0,.45),
+    inset 0 0 0 .0625rem rgba(255,255,255,.04)
+}
+
+.gallery-more::before{
+  content:"";
+  position:absolute;
+  inset:.0625rem;
+  border-radius:inherit;
+  background:linear-gradient(
+    90deg,
+    rgba(212,175,55,.18),
+    rgba(255,255,255,.05) 35%,
+    rgba(212,175,55,.18)
+  );
+  opacity:.35;
+  pointer-events:none
+}
+
+.gallery-more span{
+  font-size:3rem;
+  font-weight:300
+}
+
+.gallery-more small{
+  margin-top:.6rem;
+  font-size:.7rem;
+  letter-spacing:.25em;
+  text-transform:uppercase;
+  opacity:.6
+}
+
+/* 🔥 pojawianie */
+.gallery-item.is-visible,
+.gallery-more.is-visible{
+  opacity:1;
+  transform:scale(1);
+}
+
+/* ===== 9) O nas ===== */
+.about{background:#000;color:#fff;padding:6.25rem 0}
+.about-wrap{display:grid;grid-template-columns:1.2fr 1fr;gap:3.75rem;align-items:center;text-align:left}
+.about-map{width:100%;height:32.5rem;border-radius:1.125rem;overflow:hidden;box-shadow:0 1.25rem 3.75rem rgba(0,0,0,.5)}
+.about-map iframe{width:100%;height:100%;border:0;transition:transform .6s ease}
+.about-map:hover iframe{transform:scale(1.02)}
+.about-text h2{font-size:2.25rem;margin-bottom:1.25rem}
+.about-text p{font-size:1rem;opacity:.8;margin-bottom:1.125rem;line-height:1.7;text-align:left}
+#about-button{width:10rem;align-items:center}
+
+/* ===== 10) Kontakt / stopka ===== */
+.footer{min-height:50vh;position:relative;background:url("okokok.jpg") center/cover no-repeat;display:flex;align-items:center;overflow:hidden}
+.footer-overlay{position:absolute;inset:0;z-index:1}
+.footer-content{
+  position:relative;
+  z-index:2;
+  width:100%;
+  min-height:100%;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  gap:1.5rem;
+}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:3.75rem;text-align:left;align-items:start}
+.footer-col h3{font-size:1.625rem;margin-bottom:.875rem}
+.footer-col h4{margin-bottom:.875rem;opacity:.85}
+.footer-col p{opacity:.7;line-height:1.6;margin-bottom:.625rem;font-size:.875rem}
+.socials{margin-top:1rem;display:flex;flex-direction:column;gap:.5rem}
+.socials a{color:#ccc;text-decoration:none;font-size:.875rem;position:relative}
+.socials a::after{content:"";position:absolute;left:0;bottom:-.25rem;width:0;height:.0625rem;background:#fff;transition:.3s}
+.socials a:hover{color:#fff}.socials a:hover::after{width:25%}
+
+
+/* ===== 11) Uniwersalne animacje reveal ===== */
+.reveal{opacity:0;transform:translateY(2.5rem);transition:opacity .8s ease,transform .8s ease}
+.reveal.visible{opacity:1;transform:translateY(0)}
+
+/* ===== 12) Responsywność (tablet + mobile) ===== */
+@media (max-width:64rem){
+  body{scroll-snap-type:none}
+  .navbar{padding:0 .75rem;background:transparent !important;backdrop-filter:none !important}
+  .navbar.scrolled{background:rgba(0,0,0,.95)!important;backdrop-filter:blur(.5rem)!important}
+  .desktop-nav{display:none}.hamburger{display:flex}.nav-indicator{display:none}
+  .nav-logo img{height:2.25rem}
+  .content{padding:2rem 1rem}
+  .pricing-wrap,.about-wrap,.footer-grid{grid-template-columns:1fr !important;gap:1.75rem}
+  .pricing-card{width:100% !important;max-width:100% !important;margin:0 !important;border-radius:.875rem !important}
+  .pricing-scroll{max-height:44svh !important;overflow-y:auto !important;overflow-x:hidden !important}
+  .pricing-table{font-size:.75rem !important;border-spacing:0 .375rem !important;padding:0}
+  .pricing-table td{padding:.375rem .4375rem !important}
+  .pricing-table td:first-child{width:58% !important;overflow-wrap:anywhere}
+  .pricing-table td:last-child{width:42% !important}
+  .pricing-text{display:none !important}
+  .services-track{grid-template-columns:repeat(2,minmax(0,1fr)) !important;gap:1rem}
+  .service-card{border-radius:.75rem}.service-card img{height:21.25rem !important}
+  .card-name{font-size:1.0625rem;padding:.375rem 1.875rem;bottom:.75rem}
+  .overlay-inner{padding:1.125rem;margin-bottom:4rem}
+  .overlay-inner h3{font-size:1.125rem}.overlay-inner p{font-size:.75rem;line-height:1.45}
+  .gallery-grid{grid-template-columns:repeat(3,minmax(0,1fr))!important;grid-auto-rows:clamp(7.5rem,16vw,11.875rem)!important;gap:clamp(.55rem,1.3vw,.9rem)!important}
+  .about-map{height:20rem !important}
+  #contact{padding:2rem 0 1rem}
+  .footer-content{gap:1rem}
+}
+@media (max-width:42.5rem){
+  .services-track{grid-template-columns:1fr !important}
+  .service-card img{height:17.5rem !important}
+  .card-name{font-size:.9375rem;padding:.375rem 1.375rem}
+  .pricing-header{flex-direction:column;align-items:flex-start}
+  .pricing-tabs{width:100%}.pricing-tabs .tab{flex:1;text-align:center}
+  .pricing-table td:first-child{width:55% !important}
+  .pricing-table td:last-child{width:45% !important}
+}
+@media (max-width:26.25rem){
+  .content{padding:1.5rem .875rem}
+  .pricing-table{font-size:.6875rem !important}
+  .pricing-table td{padding:.3125rem .375rem !important}
+  .pricing-table td:last-child>.row-cta{height:1.375rem;padding:0 .5rem;font-size:.46875rem}
+}
+@media (max-width:56.25rem){
+  .footer-grid{grid-template-columns:1fr;gap:1.875rem;text-align:center}
+  .socials{align-items:center}
+  .footer-bottom{min-height:2.5rem}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===== MOBILE FOOTER POLISH FIX ===== */
+@media (max-width: 640px) {
+
+  .footer {
+    padding: 1.2rem 0 !important;
+  }
+
+  /* górna siatka — ciaśniej */
+  .footer-grid {
+    gap: 1rem !important;
+    margin-bottom: 1rem !important;
+    text-align: center;
+  }
+
+  /* dolna belka */
+  .footer-content {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    flex-wrap: wrap !important;
+    gap: 6px !important;
+    text-align: center;
+  }
+
+  .footer-bottom {
+    padding-top: 0.6rem !important;
+  }
+
+  /* tekst copyright */
+  .footer-bottom p {
+    margin: 0 !important;
+    font-size: 0.85rem !important;
+    line-height: 1.3 !important;
+    white-space: nowrap; /* ← KLUCZ: nie łamie na 2 linie */
+  }
+
+  /* jeśli ekran mega wąski — pozwól złamać */
+  @media (max-width: 360px) {
+    .footer-bottom p {
+      white-space: normal;
+    }
+  }
+}
+</style>
+
+</head>
+<body>
+
+<header class="navbar" id="siteNavbar">
+  <a href="#s1" class="nav-logo">
+    <img src="LOGO.png" alt="Logo" height="50" width="auto">
+  </a>
+
+  <nav class="desktop-nav">
+    <a href="#s1">Dom</a>
+    <a href="#s2">Cennik</a>
+    <a href="#team">Zespół</a>
+    <a href="#gallery">Realizacje</a>
+    <a href="#kal">O nas</a>
+    <a href="#contact">Kontakt</a>
+  </nav>
+
+  <label class="hamburger" aria-label="Otwórz menu">
+    <input type="checkbox" id="menuCheckbox" class="hamburger-input">
+    <svg viewBox="0 0 32 32" class="hamburger-icon" aria-hidden="true">
+      <path class="line line-top-bottom"
+        d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"
+        stroke="white" stroke-width="3" stroke-linecap="round" fill="none"/>
+      <path class="line"
+        d="M7 16 27 16"
+        stroke="white" stroke-width="3" stroke-linecap="round" fill="none"/>
+    </svg>
+  </label>
+</header>
+
+<nav id="mobileNav" class="mobile-nav-panel" aria-hidden="true">
+    <a href="#s1">Dom</a>
+    <a href="#s2">Cennik</a>
+    <a href="#team">Zespół</a>
+    <a href="#gallery">Realizacje</a>
+    <a href="#kal">O nas</a>
+    <a href="#contact">Kontakt</a>
+</nav>
+
+<div class="nav-indicator">
+  <button class="dot active" data-target="#s1"></button>
+  <button class="dot" data-target="#s2"></button>
+  <button class="dot" data-target="#team"></button>
+  <button class="dot" data-target="#gallery"></button>
+  <button class="dot" data-target="#kal"></button>
+  <button class="dot" data-target="#contact"></button>
+  <button class="dot" data-target="#services"></button>
+</div>
+
+<section id="s1">
+  <div class="layer depth-1"></div>
+  <div class="layer depth-2"></div>
+  <div class="layer depth-3"></div>
+  <div class="content">
+    <h1>E'xcellence Barber Shop by Ercan Özağac</h1>
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+    <div class="actions">
+      <a href="https://booksy.com/pl-pl/239918_angelika-raubo-studio-fryzjerskie_fryzjer_22001_wejherowo" class="salon-btn booksy-btn">
+        <img src="ada.png" alt="Booksy" class="booksy-logo">
+        <span>Booksy</span>
+      </a>
+      <a href="https://www.google.com/search?sa=X&sca_esv=af97102bc5b36d3c&sxsrf=ANbL-n7xlIgcA-CAq1J_dquB08JkXwg6xA:1772797352657&q=Angelika+Raubo+Studio+Fryzjerskie+Opinie&rflfq=1&num=20&stick=H4sIAAAAAAAAAONgkxIyMTA2NzM2N7A0NzU1sTQztjDewMj4ilHDMS89NSczO1EhKLE0KV8huKQ0JTNfwa2osiortag4OzNVwb8gMy8zdREr0UoBP9U8wG8AAAA&rldimm=403763709755496383&tbm=lcl&hl=pl-PL&ved=2ahUKEwjt39rjmIuTAxUmBhAIHShLIO0Q9fQKegQITxAG&cshid=1772797440835613&biw=1920&bih=992&dpr=1#lkt=LocalPoiReviews" class="salon-btn stars-btn" aria-label="Oceny Google">
+        <span class="stars-wrap"><span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span></span>
+        <span class="by-google">/ 4.9</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section id="s2" class="abc--cennik abc--fade">
+  
+<div class="abc--cennik-wrap">
+
+<div class="abc--cennik-image abc--reveal">
+<img src="https://d375139ucebi94.cloudfront.net/region2/pl/161624/biz_photo/73a85b261ebf4583ac4da73c60d087-e-xcellence-barber-shop-by-erc-biz-photo-88540b6049334e318e3bcb61470d67-booksy.jpeg" alt="Cennik" style="width:90%; height:85%; object-fit:cover; border-radius:1rem;">
+</div>
+
+<div class="abc--cennik-card">
+
+<div class="abc--cennik-tabs abc--reveal">
+<button class="abc--tab active" data-type="damskie" style="color: #000 !important;">Damskie</button>
+<button class="abc--tab" data-type="meskie" style="color: #000 !important;">Męskie</button>
+</div>
+
+<div class="abc--cennik-list">
+
+<!-- DAMSKIE -->
+
+<div class="abc--cennik-group active" data-type="damskie">
+
+<div class="abc--item abc--reveal"><span class="abc--name">Koloryzacja i farbowanie włosów (Średnie)</span><div><span class="abc--price">220 zł</span><span class="abc--time">2h</span></div></div>
+<div class="abc--item abc--reveal"><span class="abc--name">Strzyzenie damskie włosy krótkie</span><div><span class="abc--price">70 zł+</span><span class="abc--time">1h</span></div></div>
+<div class="abc--item abc--reveal"><span class="abc--name">Prostowanie proteinowe | wariant 1</span><div><span class="abc--price">400 zł+</span><span class="abc--time">3h 30min</span></div></div>
+<div class="abc--item abc--reveal"><span class="abc--name">Prostowanie proteinowe | włosy długie</span><div><span class="abc--price">450 zł+</span><span class="abc--time">4h 30min</span></div></div>
+<div class="abc--item abc--reveal"><span class="abc--name">Dekoloryzacja | włosy krótkie</span><div><span class="abc--price">300 zł</span><span class="abc--time">4h 30min</span></div></div>
+<div class="abc--item abc--reveal"><span class="abc--name">Dekoloryzacja | włosy średnie, długie</span><div><span class="abc--price">400 zł</span><span class="abc--time">5h 30min</span></div></div>
+<div class="abc--item abc--reveal"><span class="abc--name">Rozjaśnianie globalne | wariant 1</span><div><span class="abc--price">300 zł+</span><span class="abc--time">3h 30min</span></div></div>
+<div class="abc--item abc--reveal"><span class="abc--name">Rozjaśnianie globalne | równanie koloru</span><div><span class="abc--price">400 zł+</span><span class="abc--time">4h 30min</span></div></div>
+<div class="abc--item abc--reveal"><span class="abc--name">Rozjaśnianie włosów AirTouch</span><div><span class="abc--price">450 zł</span><span class="abc--time">5h</span></div></div>
+<div class="abc--item abc--reveal"><span class="abc--name">Koloryzacja z refleksami</span><div><span class="abc--price">320 zł</span><span class="abc--time">3h 30min</span></div></div>
+<div class="abc--item abc--reveal"><span class="abc--name">Tonowanie włosów</span><div><span class="abc--price">170 zł</span><span class="abc--time">2h</span></div></div>
+
+<div class="abc--more">
+<div class="abc--item abc--reveal"><span class="abc--name">Przykład</span><div><span class="abc--price">0 zł</span><span class="abc--time">0h</span></div></div>
+<div class="abc--item abc--reveal"><span class="abc--name">Przykład</span><div><span class="abc--price">0 zł</span><span class="abc--time">0h</span></div></div>
+<div class="abc--item abc--reveal"><span class="abc--name">Przykład</span><div><span class="abc--price">0 zł</span><span class="abc--time">0h</span></div></div>
+<div class="abc--item abc--reveal"><span class="abc--name">Przykład</span><div><span class="abc--price">0 zł</span><span class="abc--time">0h</span></div></div>
+
+
+</div>
+
+</div>
+
+<!-- MĘSKIE -->
+
+<div class="abc--cennik-group" data-type="meskie">
+
+<div class="abc--item abc--reveal"><span>Strzyżenie męskie</span><div><span class="abc--price">50 zł</span><span class="abc--time">30 min</span></div></div>
+<div class="abc--item abc--reveal"><span>Strzyżenie + mycie</span><div><span class="abc--price">60 zł</span><span class="abc--time">40 min</span></div></div>
+<div class="abc--item abc--reveal"><span>Broda</span><div><span class="abc--price">40 zł</span><span class="abc--time">30 min</span></div></div>
+<div class="abc--item abc--reveal"><span>Odsiwianie</span><div><span class="abc--price">70 zł+</span><span class="abc--time">40 min</span></div></div>
+<div class="abc--item abc--reveal"><span>Stylizacja włosów</span><div><span class="abc--price">30 zł</span><span class="abc--time">15 min</span></div></div>
+<div class="abc--item abc--reveal"><span>Strzyżenie maszynką</span><div><span class="abc--price">40 zł</span><span class="abc--time">20 min</span></div></div>
+<div class="abc--item abc--reveal"><span>Strzyżenie + broda</span><div><span class="abc--price">80 zł</span><span class="abc--time">50 min</span></div></div>
+<div class="abc--item abc--reveal"><span class="abc--name">Przykład</span><div><span class="abc--price">0 zł</span><span class="abc--time">0h</span></div></div>
+
+
+<div class="abc--more">
+<div class="abc--item abc--reveal"><span class="abc--name">Przykład</span><div><span class="abc--price">0 zł</span><span class="abc--time">0h</span></div></div>
+<div class="abc--item abc--reveal"><span class="abc--name">Przykład</span><div><span class="abc--price">0 zł</span><span class="abc--time">0h</span></div></div>
+<div class="abc--item abc--reveal"><span class="abc--name">Przykład</span><div><span class="abc--price">0 zł</span><span class="abc--time">0h</span></div></div>
+<div class="abc--item abc--reveal"><span class="abc--name">Przykład</span><div><span class="abc--price">0 zł</span><span class="abc--time">0h</span></div></div>
+
+
+</div>
+
+</div>
+
+</div>
+
+<button class="abc--toggle" style="color: #000 !important;">Zobacz więcej</button>
+
+</div>
+</div>
+</section>
+
+<style>
+/* PREMIUM REVEAL */
+
+.abc--reveal{
+opacity:0;
+transform:translateY(3.5rem) scale(0.98);
+filter:blur(0.1rem);
+transition:
+opacity 1.1s cubic-bezier(.19,1,.22,1),
+transform 1.1s cubic-bezier(.19,1,.22,1),
+filter 1.1s cubic-bezier(.19,1,.22,1);
+will-change:opacity,transform,filter;
+}
+
+.abc--reveal.show{
+opacity:1;
+transform:translateY(0) scale(1);
+filter:blur(0);
+}
+
+
+
+.abc--cennik{
+padding:8vh 0;
+background:#f4f4f4;
+}
+
+.abc--cennik-wrap{
+width:85%;
+margin:auto;
+display:flex;
+gap:4rem;
+align-items:stretch;
+}
+
+.abc--cennik-image{
+flex:1;
+min-height:60vh;
+border-radius:1rem;
+overflow:hidden;
+}
+
+.abc--cennik-card{
+flex:1;
+background:white;
+padding:3rem;
+border-radius:1rem;
+display:flex;
+flex-direction:column;
+gap:1rem;
+}
+
+.abc--cennik-tabs{
+display:flex;
+gap:1rem;
+margin-bottom:0.5rem;
+}
+
+.abc--tab{
+background:transparent;
+border:none;
+font-size:1.2rem;
+cursor:pointer;
+opacity:0.5;
+transition:0.3s;
+}
+
+.abc--tab.active{
+opacity:1;
+font-weight:600;
+}
+
+.abc--cennik-list{
+position:relative;
+}
+
+.abc--cennik-group{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+display:flex;
+flex-direction:column;
+gap:0.9rem;
+
+opacity:0;
+transform:translateY(10px);
+pointer-events:none;
+
+transition:
+opacity .35s ease,
+transform .35s ease;
+}
+
+.abc--cennik-group.active{
+opacity:1;
+transform:translateY(0);
+pointer-events:auto;
+position:relative;
+}
+
+.abc--item{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding-bottom:0.6rem;
+border-bottom:0.08rem dotted #ccc;
+}
+
+.abc--item div{
+text-align:right;
+}
+
+.abc--price{
+font-weight:600;
+display:block;
+}
+
+.abc--time{
+font-size:0.9rem;
+opacity:0.6;
+}
+
+.abc--more{
+display:none;
+}
+
+.abc--more.open{
+display:block;
+}
+
+.abc--toggle{
+background:none;
+border:none;
+cursor:pointer;
+font-size:1rem;
+opacity:0.7;
+margin-top:0.5rem;
+}
+
+/* PC limit 12 */
+
+.abc--cennik-group .abc--item:nth-child(n+13){
+display:none;
+}
+
+.abc--cennik-group.open .abc--item{
+display:flex;
+}
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+.abc--cennik-wrap{
+flex-direction:column;
+width:94%;
+}
+
+.abc--cennik-image{
+display:none;
+}
+
+.abc--cennik-card{
+padding:1.6rem;
+}
+
+/* mobile limit 7 */
+
+.abc--cennik-group .abc--item:nth-child(n+8){
+display:none;
+}
+.abc--name {
+  text-align: left;
+  max-width: 70%;
+}
+.abc--price {
+  max-width: max-content;
+}
+}
+/* tablety pionowo (portrait) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .abc--name {
+  text-align: left;
+  max-width: 70%;
+}
+.abc--price {
+  max-width: max-content;
+}
+}
+.abc--more{
+display:none;
+width:100%;
+}
+
+.abc--more.open{
+display:flex;
+flex-direction:column;
+gap:0.9rem;
+width:100%;
+}
+
+.abc--more .abc--item{
+width:100%;
+}
+
+
+
+/* tablety poziomo (landscape) */
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+.abc--name {
+  text-align: left;
+  max-width: 70%;
+}
+.abc--price {
+  max-width: max-content;
+}}
+
+</style>
+
+
+
+<script>
+
+const tabs = document.querySelectorAll('.abc--tab');
+const groups = document.querySelectorAll('.abc--cennik-group');
+const toggle = document.querySelector('.abc--toggle');
+
+
+/* TABY */
+
+tabs.forEach(tab => {
+
+tab.addEventListener('click', () => {
+
+tabs.forEach(t => t.classList.remove('active'));
+tab.classList.add('active');
+
+groups.forEach(group=>{
+group.classList.toggle(
+'active',
+group.dataset.type === tab.dataset.type
+);
+});
+
+/* reset rozwinięcia */
+
+groups.forEach(g=>g.classList.remove('open'));
+
+document.querySelectorAll('.abc--more').forEach(m=>{
+m.classList.remove('open');
+});
+
+toggle.textContent='Zobacz więcej';
+
+});
+
+});
+
+
+/* ZOBACZ WIĘCEJ */
+
+toggle.addEventListener('click', () => {
+
+const active = document.querySelector('.abc--cennik-group.active');
+if(!active) return;
+
+const more = active.querySelector('.abc--more');
+if(!more) return;
+
+const open = more.classList.toggle('open');
+
+active.classList.toggle('open');
+
+toggle.textContent = open ? 'Zwiń' : 'Zobacz więcej';
+
+
+/* natychmiastowa animacja elementów */
+
+if(open){
+
+const items = Array.from(more.querySelectorAll('.abc--item'));
+
+items.sort((a,b)=>{
+return a.offsetTop - b.offsetTop;
+});
+
+items.forEach(item=>{
+item.classList.add('show');
+});
+
+}
+
+});
+
+
+/* MOBILE – przenoszenie elementów */
+
+function setupCennikMobile(){
+
+const mobile = window.innerWidth <= 768;
+
+document.querySelectorAll('.abc--cennik-group').forEach(group=>{
+
+const items = Array.from(group.querySelectorAll(':scope > .abc--item'));
+const more = group.querySelector('.abc--more');
+if(!more) return;
+
+const limit = mobile ? 7 : 12;
+
+items.forEach((item,i)=>{
+if(i>=limit && item.parentNode!==more){
+more.appendChild(item);
+}
+});
+
+});
+
+}
+
+window.addEventListener('load',setupCennikMobile);
+window.addEventListener('resize',setupCennikMobile);
+
+</script>
+<section id="team" class="abc-team">
+  <div class="abc-team--wrap">
+
+    <div class="abc-team--grid">
+
+      <div class="abc-team--card">
+        <img src="barber.jpg" alt="">
+        <div class="abc-team--name">Osoba 1</div>
+
+        <div class="abc-team--overlay">
+          <div class="abc-team--inner">
+            <h3>Osoba 1</h3>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="abc-team--card">
+        <img src="https://d375139ucebi94.cloudfront.net/region2/pl/161624/resource_photos/e3cf1a8a46c3486a8a287e8484dc3d-e-xcellence-barber-shop-by-erc-antoni-66547a8080354862b98443825cbece-booksy.jpeg" alt="">
+        <div class="abc-team--name">Osoba 2</div>
+
+        <div class="abc-team--overlay">
+          <div class="abc-team--inner">
+            <h3>Osoba 2</h3>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="abc-team--card">
+        <img src="https://d375139ucebi94.cloudfront.net/region2/pl/161624/resource_photos/62888c7d473b415e914c88a0aece41-e-xcellence-barber-shop-by-erc-ersin-7048c6dc881d4278ae143fd5a547f5-booksy.jpeg" alt="">
+        <div class="abc-team--name">Osoba 3</div>
+
+        <div class="abc-team--overlay">
+          <div class="abc-team--inner">
+            <h3>Osoba 3</h3>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="abc-team--card">
+        <img src="barberos.png" alt="">
+        <div class="abc-team--name">Osoba 4</div>
+
+        <div class="abc-team--overlay">
+          <div class="abc-team--inner">
+            <h3>Osoba 4</h3>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<style>
+
+.abc-team{
+padding:8rem 5%;
+background:#0b0b0b;
+}
+
+.abc-team--wrap{
+max-width:90rem;
+margin:auto;
+}
+
+.abc-team--grid{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:2rem;
+margin-top:3rem;
+}
+
+.abc-team--card{
+position:relative;
+border-radius:1.2rem;
+overflow:hidden;
+box-shadow:0 1rem 3rem rgba(0,0,0,.45);
+
+transform:translateY(3rem);
+opacity:0;
+
+transition:transform .7s cubic-bezier(.22,1,.36,1), opacity .7s ease;
+cursor:pointer;
+}
+
+.abc-team--card.visible{
+transform:translateY(0);
+opacity:1;
+}
+
+.abc-team--card img{
+width:100%;
+height:28rem;
+object-fit:cover;
+transition:transform .8s ease;
+}
+
+.abc-team--card:hover img{
+transform:scale(1.05);
+}
+
+/* imię */
+
+.abc-team--name{
+position:absolute;
+bottom:1rem;
+left:50%;
+transform:translateX(-50%);
+border:.125rem solid white;
+border-radius:.70rem;
+padding:.45rem 1.2rem;
+color:white;
+font-weight:600;
+font-size:.95rem;
+letter-spacing:.05em;
+background:rgba(0,0,0,.35);
+backdrop-filter:blur(.2rem);
+z-index:3;
+transition:opacity .25s ease, transform .25s ease;
+}
+
+/* znika przy hover / klik */
+.abc-team--card:hover .abc-team--name,
+.abc-team--card.active .abc-team--name{
+opacity:0;
+transform:translateX(-50%) translateY(.6rem);
+}
+
+/* overlay */
+
+.abc-team--overlay{
+position:absolute;
+inset:0;
+background:linear-gradient(to bottom, rgba(0,0,0,.05) 10%, rgba(0,0,0,.55) 60%, rgba(0,0,0,.9) 100%);
+opacity:0;
+transition:opacity .35s ease;
+display:flex;
+align-items:center; /* wyśrodkowanie pionowe */
+justify-content:center; /* wyśrodkowanie poziome */
+padding:1rem; /* dla komfortu przy dłuższym tekście */
+text-align:center;
+}
+
+.abc-team--card:hover .abc-team--overlay,
+.abc-team--card.active .abc-team--overlay{
+opacity:1;
+}
+
+.abc-team--inner{
+display:flex;
+flex-direction:column;
+gap:.6rem;
+justify-content:center;
+align-items:center;
+}
+
+.abc-team--inner h3{
+font-size:1.4rem;
+margin:0;
+color:white;
+}
+
+.abc-team--inner p{
+font-size:.95rem;
+line-height:1.6;
+color:rgba(255,255,255,.85);
+margin:0;
+word-break:break-word; /* pozwala zawijać dłuższe zdania */
+}
+
+.abc-team--card:hover .abc-team--inner,
+.abc-team--card.active .abc-team--inner{
+transform:translateY(0);
+opacity:1;
+}
+
+/* responsive */
+
+@media(max-width:1100px){
+.abc-team--grid{
+grid-template-columns:repeat(2,1fr);
+}
+}
+
+@media(max-width:600px){
+.abc-team--grid{
+grid-template-columns:1fr;
+}
+}
+
+</style>
+
+<script>
+// UNIQUE TEAM FADE-IN – NEW VARIABLES
+const teamCardsFade = document.querySelectorAll(".abc-team--card");
+
+// ustawienie początkowego stanu
+teamCardsFade.forEach((teamCard, idx) => {
+  teamCard.style.opacity = 0;
+  teamCard.style.transform = "translateY(40px)";
+  teamCard.style.transition = `transform .7s cubic-bezier(.22,1,.36,1) ${idx*0.12}s, opacity .7s ease ${idx*0.12}s`;
+});
+
+// IntersectionObserver
+const teamFadeObserver = new IntersectionObserver((entries)=>{
+  entries.forEach(entry => {
+    const card = entry.target;
+    const index = Array.from(teamCardsFade).indexOf(card);
+
+    if(entry.isIntersecting){
+      // fade-in tylko przy wejściu od góry
+      if(entry.boundingClientRect.top > 0){
+        setTimeout(() => {
+          card.style.opacity = 1;
+          card.style.transform = "translateY(0)";
+        }, index * 120); // staggered delay
+      }
+    } else {
+      // reset tylko jeśli przewijasz w górę
+      if(entry.boundingClientRect.top > 0){
+        card.style.opacity = 0;
+        card.style.transform = "translateY(40px)";
+      }
+    }
+  });
+},{threshold:0.1});
+
+// obserwowanie kart
+teamCardsFade.forEach(card => teamFadeObserver.observe(card));
+
+// klik overlay
+teamCardsFade.forEach(teamCard=>{
+  teamCard.addEventListener("click", ()=>{
+    if(teamCard.classList.contains("active")){
+      teamCard.classList.remove("active");
+      return;
+    }
+    teamCardsFade.forEach(c => c.classList.remove("active"));
+    teamCard.classList.add("active");
+  });
+});
+</script>
+
+<section id="gallery">
+  <div class="content">
+    <h1>Nasze Realizacje</h1>
+    <div class="gallery-grid">
+      <figure class="gallery-item tall"><div class="img-wrap"><img src="https://scontent-waw2-1.xx.fbcdn.net/v/t39.30808-6/480900253_599379052992469_1307264914329470453_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=7b2446&_nc_ohc=1v7ruj3foZMQ7kNvwG6e4Xa&_nc_oc=AdrDPvZFh-wmg6lWivUs4g-p3kgrTLNTZn4sChoCQmKsik8V21gOBxaqHs2jw6RQWa8&_nc_zt=23&_nc_ht=scontent-waw2-1.xx&_nc_gid=cb8mzod1ltErqgSSetCoFw&_nc_ss=8&oh=00_Afw9q1o4-0jie3Zpw0wDG36t9PEe6IJfV-dnWgQo4Hkwhg&oe=69C1CE2F" alt=""></div><figcaption></figcaption></figure>
+      <figure class="gallery-item"><div class="img-wrap"><img src="www.png" alt=""></div><figcaption></figcaption></figure>
+      <figure class="gallery-item tall"><div class="img-wrap"><img src="https://scontent-waw2-2.xx.fbcdn.net/v/t39.30808-6/480988560_598562436407464_5458128037407905071_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=13d280&_nc_ohc=Tn93CohYM0IQ7kNvwFe1T94&_nc_oc=AdqnypfxDz38TewzlcqRxFAWYMHhVE75_F6zQDSkg6PSQwH1ZyQDbbjK8Q4HJkYwu74&_nc_zt=23&_nc_ht=scontent-waw2-2.xx&_nc_gid=typWmn1NNQOfCY1DYQkd2Q&_nc_ss=8&oh=00_AfwT5q3cC6x85QMf0bHHtNogax3SEdfxrGObRKEEQ2EMMA&oe=69C1E233" alt=""></div><figcaption></figcaption></figure>
+      <a href="https://www.facebook.com/p/Angelika-Raubo-Studio-Fryzjerskie-100083999013863/" target="_blank" class="gallery-more"><span>+</span><small>więcej</small></a>
+      <figure class="gallery-item tall"><div class="img-wrap"><img src="ww.png" alt=""></div><figcaption></figcaption></figure>
+      <figure class="gallery-item tall"><div class="img-wrap"><img src="https://scontent-waw2-1.xx.fbcdn.net/v/t39.30808-6/480574384_598565999740441_668236085464935179_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=13d280&_nc_ohc=f2DX7-T5PNIQ7kNvwE6Xzxx&_nc_oc=AdpbioXeMSjq4MLve7loBbxRqfbSTMc8_at1xFpfPdUCu4Ryzs4VS0XLFsneKqE2Bqk&_nc_zt=23&_nc_ht=scontent-waw2-1.xx&_nc_gid=r8whi8mi7RyqZGWuw-Rxig&_nc_ss=8&oh=00_AfwnuV8PjRRRPxQyYNNUEm4l7Qh4Zj6h349GzHV4oochSg&oe=69C1C9E9" alt=""></div><figcaption></figcaption></figure>
+      <figure class="gallery-item"><div class="img-wrap"><img src="https://lh3.googleusercontent.com/gps-cs-s/AHVAwepIg7g9KELgY_5PDMISqdWm4fvTePGc-DZVbemtzbb26Ty6c1KpRvGEu6fd7eyNRA4BAWt51nBWn1iDaD8WJWcPo5rJGWbJuw8ACuhLSPrFMOD30hWDDRY-hcEepDOMxtZSADs=s680-w680-h510-rw" alt=""></div><figcaption></figcaption></figure>
+      <figure class="gallery-item"><div class="img-wrap"><img src="https://scontent-waw2-2.xx.fbcdn.net/v/t39.30808-6/590640834_820821927514846_8529060075832710616_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=13d280&_nc_ohc=PqsUyM3bclsQ7kNvwFxpWRc&_nc_oc=Adr0-AqZtJUdBTRbPndXUqVSUWy5CxyHuma6tXSx5mZr6qprpC-kvSriffHvT-Tu_H4&_nc_zt=23&_nc_ht=scontent-waw2-2.xx&_nc_gid=zPFKWIdnuuM7W6pMxwpwuw&_nc_ss=8&oh=00_AfznTmTrPw52wZfumbIxtszc9um8dFPqgaJn0gc58V6img&oe=69C1C6A5" alt=""></div><figcaption></figcaption></figure>
+    </div>
+  </div>
+</section>
+
+
+<section id="kal" id="services" class="about">
+  <div class="content about-wrap">
+    <div class="about-map about-fade">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1026.6031029927667!2d18.185197080548487!3d54.621988970100915!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46fdb9ef14aea28b%3A0x59a74f46d2b97bf!2sAngelika%20Raubo%20Studio%20Fryzjerskie!5e0!3m2!1spl!2spl!4v1770743702658!5m2!1spl!2spl"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+
+    <div class="about-text about-fade">
+      <h2>Raubo Studio Fryzjerskie</h2>
+      <p>Tworzymy miejsce, do którego wraca się nie tylko po fryzurę, ale także po dobrą atmosferę i chwilę relaksu.
+      Specjalizujemy się w nowoczesnych koloryzacjach, precyzyjnych cięciach oraz regeneracji włosów. Każda wizyta to indywidualne podejście i dopasowanie fryzury do stylu klienta.</p>
+      <a href="https://maps.app.goo.gl/T7LayPDEvxX8cWx2A" target="_blank" id="about-button" class="salon-btn booksy-btn about-fade">
+        <img src="location.png" alt="Booksy" class="booksy-logo" style="margin-right:0.7rem;">
+        <span>Jedź</span>
+      </a>
+    </div>
+  </div>
+</section>
+<style>
+.about-fade{
+opacity:0;
+transform:translateY(3rem);
+transition:opacity 1.1s cubic-bezier(.19,1,.22,1), transform 1.1s cubic-bezier(.19,1,.22,1);
+}
+
+.about-fade.show{
+opacity:1;
+transform:translateY(0);
+}
+</style>
+<script>
+  const aboutFadeElements = document.querySelectorAll(".about-fade");
+
+/* kierunek scrolla */
+let aboutLastScroll = window.scrollY;
+let aboutScrollDirection = "down";
+
+window.addEventListener("scroll", () => {
+  const currentScroll = window.scrollY;
+  aboutScrollDirection = currentScroll > aboutLastScroll ? "down" : "up";
+  aboutLastScroll = currentScroll;
+});
+
+const aboutFadeObserver = new IntersectionObserver(entries=>{
+  
+  entries.forEach(entry=>{
+
+    if(entry.isIntersecting && aboutScrollDirection === "down"){
+      entry.target.classList.add("show");
+    }
+
+    if(!entry.isIntersecting && entry.boundingClientRect.top > 0){
+      entry.target.classList.remove("show");
+    }
+
+  });
+
+},{threshold:0.15});
+
+aboutFadeElements.forEach((el,i)=>{
+  el.style.transitionDelay = (i * 0.12) + "s";
+  aboutFadeObserver.observe(el);
+});
+</script>
+<!-- GOOGLE ICONS -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+
+
+
+
+
+
+<section id="contact" class="contact-section">
+
+  <div class="contact-overlay"></div>
+
+  <div class="contact-container">
+
+    <!-- LEWA STRONA -->
+    <div class="contact-left">
+
+      <div class="contact-card">
+        <span class="material-symbols-outlined contact-icon">location_on</span>
+        <div class="contact-text">
+          <span class="value"><a href="http://google.com/maps?sca_esv=df890eccffbfa804&sxsrf=ANbL-n7m2bM7NQwOHHU5AmLFyD8cX2ul-w:1773332130410&si=AL3DRZGNtcdgKOqVhotcr-UG2kkYpwR2WO4qu3O00NmpwBmLnWs2Q_UMKU-Xw6eNOjDLN3-HsGrcTaxLuWHFQceVJa4zi9TG-m4ORTT726gW3t6nXhDHRVCk4L-jOJzr0FY_P0Aw1zB_-clupJjxDXGy8Sc25NYBdw%3D%3D&biw=1920&bih=992&dpr=1&um=1&ie=UTF-8&fb=1&gl=pl&sa=X&geocode=KYuirhTvuf1GMb-XK230dJoF&daddr=S%C5%82oneczna+22,+84-200+Bolszewo">Słoneczna 22, 84-200 Bolszewo</a></span>
+        </div>
+      </div>
+
+      <div class="contact-card">
+        <span class="material-symbols-outlined contact-icon">schedule</span>
+        <div class="contact-text">
+          <span class="value">Pn–Pt 09:00–18:00 | Sob 09:00–14:00</span>
+        </div>
+      </div>
+
+      <div class="contact-card">
+        <span class="material-symbols-outlined contact-icon">call</span>
+        <div class="contact-text">
+          <span class="value"><a href="tel:+48883551445">+48 883 551 445</a></span>
+        </div>
+      </div>
+
+      <div class="contact-card">
+        <span class="material-symbols-outlined contact-icon">mail</span>
+        <div class="contact-text">
+          <span class="value"><a href="mailto:kontakt@raubostudio.pl">kontakt@raubostudio.pl</a></span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- PRAWA STRONA -->
+    <div class="contact-right">
+
+      <div class="review-card">
+
+        <div class="review-top">
+          <div>
+            <h3>Oceny naszych klientów</h3>
+          </div>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google">
+        </div>
+
+        <div class="review-rating">
+          <div class="rating-number">4.9</div>
+          <div class="rating-stars">★★★★★</div>
+        </div>
+
+        <p class="review-description">
+          Każda opinia ma znaczenie. Jeśli korzystałeś z naszych usług —
+          zostaw krótką recenzję. Pomagasz nam rosnąć i budować markę,
+          która stawia na jakość i konkret.
+        </p>
+
+          <a href="https://www.google.com/search?sca_esv=af97102bc5b36d3c&sxsrf=ANbL-n7RkKoC64vHuvVoILun9qZY21Xjcw:1772797351164&q=raubo+bolszewo&si=AL3DRZEsmMGCryMMFSHJ3StBhOdZ2-6yYkXd_doETEE1OR-qOQ4UMCzUngH9m_bSNbaB4WfrSKd2cUaQnPzrPuUNYE5auw3qZ9XL8oZmvtbTxFKU7aC_gDc%3D&uds=ALYpb_mM1P_6lpjjfowRxWEKPgkk_GqRlqPdbnyxIl-8iRhh8bkLff_D7Wj8f8-TypcUEBxS6z2FIuNDW1Iium50Qvx_7cZNDKJvm0x33Z2Fca2Tc0VeKwQ&sa=X&ved=2ahUKEwivzP_imIuTAxVPUVUIHas2HSkQ3PALegQIORAF&biw=1920&bih=992&dpr=1"
+   target="_blank"
+   class="review-button">
+
+  <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg" 
+       alt="Google">
+
+  <span>Dodaj opinię teraz</span>
+
+</a>
+            
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<style>
+/* ===== CONTACT SECTION ===== */
+
+.contact-section{
+  position:relative;
+  background:url("okokok.jpg") center/cover no-repeat;
+  padding:7rem 2rem;
+  color:#fff;
+}
+
+.contact-overlay{
+  position:absolute;
+  inset:0;
+  background:linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.6));
+  z-index:1;
+}
+
+.contact-container{
+  position:relative;
+  z-index:2;
+  max-width:1200px;
+  margin:0 auto;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:5rem;
+}
+
+/* WSPÓLNY STYL BLOKÓW (szklany, złoty akcent) */
+
+.contact-card,
+.review-card{
+  display:flex;
+  flex-direction:column;
+  gap:1.5rem;
+  padding:1.8rem 2rem;
+  border-radius:18px;
+  background:rgba(255,255,255,0.08);
+  border:1px solid rgba(255,255,255,0.15);
+  backdrop-filter:blur(10px);
+  transition:.35s ease;
+}
+
+.contact-card:hover,
+.review-card:hover{
+  transform:translateY(-6px);
+  border-color:rgb(255, 255, 255);
+  box-shadow:0 20px 60px rgba(0,0,0,.4);
+}
+
+/* LEWY BLOK */
+
+.contact-left{
+  display:flex;
+  flex-direction:column;
+  gap:1.5rem;
+}
+
+.contact-card{
+  flex-direction:row;
+  align-items:center;
+  gap:1.4rem;
+}
+
+.contact-icon{
+  font-size:30px;
+  color:#ffffff;
+}
+
+.contact-text .label{
+  font-size:.75rem;
+  text-transform:uppercase;
+  letter-spacing:.15em;
+  opacity:.7;
+  margin-bottom:.4rem;
+  color:#fff;
+}
+
+.contact-text .value{
+  font-size:1.1rem;
+  font-weight:200;
+  line-height:1.5;
+  color:#fff;
+}
+
+.contact-text a{
+  color:#fff;
+  text-decoration:none;
+}
+
+.contact-text a:hover{
+  color:wheat;
+}
+
+/* PRAWY BLOK – takie samo tło jak lewy, ciemniejszy tekst */
+
+.contact-right{
+  display:flex;
+  flex-direction:column;
+}
+
+.review-card{
+  flex:1; /* rozciąga do wysokości lewej kolumny */
+  color:#111; /* czytelny tekst na przezroczystym tle */
+}
+
+.review-top{
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-start;
+}
+
+.review-top img{
+  height:22px;
+}
+
+.review-label{
+  font-size:.7rem;
+  text-transform:uppercase;
+  letter-spacing:.2em;
+  opacity:.6;
+}
+
+.review-top h3{
+  font-size:1.3rem;
+  font-weight:600;
+  color: white
+}
+
+.review-rating{
+  display:flex;
+  align-items:center;
+  gap:1rem;
+}
+
+.rating-number{
+  font-size:2rem;
+  font-weight:700;
+  color:#ffffff;
+}
+
+.rating-stars{
+  font-size:1.5rem;
+  letter-spacing:.2rem;
+  color:#fbbc04;
+  margin: 0, 2rem, 0, 2rem;
+}
+
+.rating-count{
+  font-size:.8rem;
+  opacity:.6;
+}
+
+.review-description{
+  font-size:1rem;
+  line-height:1.7;
+  opacity:.85;
+  color: white;
+}
+
+.review-button{
+  margin-top:auto;          /* wypycha na dół */
+  align-self:center;        /* wyśrodkowanie */
+  display:flex;
+  align-items:center;
+  gap:.8rem;
+  padding:1rem 2.2rem;
+  border-radius:60px;
+  font-size:.8rem;
+  letter-spacing:.15em;
+  text-transform:uppercase;
+  text-decoration:none;
+  background:rgba(0, 0, 0, 0.7);
+  border:none;
+  backdrop-filter:blur(6px);
+  color:#fff;
+  transition:.3s ease;
+}
+
+.review-button img{
+  height:18px;
+  width:auto;
+}
+
+.review-button:hover{
+  background:rgba(0, 0, 0, 0.7);
+  transform:translateY(-3px);
+  box-shadow:0 10px 30px rgba(0,0,0,.4);
+}
+
+.review-card{
+  display:flex;
+  flex-direction:column;
+}
+</style>
+
+<script>
+const contactBlocks = document.querySelectorAll(".contact-card, .review-card");
+
+/* kierunek scrolla */
+let previousScrollPosition = window.scrollY;
+let scrollMoveDirection = "down";
+
+window.addEventListener("scroll", () => {
+  const currentScrollPosition = window.scrollY;
+  scrollMoveDirection = currentScrollPosition > previousScrollPosition ? "down" : "up";
+  previousScrollPosition = currentScrollPosition;
+});
+
+const contactBlocksObserver = new IntersectionObserver(entries=>{
+  entries.forEach(entry=>{
+
+    /* fade tylko przy scrollu w dół */
+    if(entry.isIntersecting && scrollMoveDirection === "down"){
+      entry.target.style.opacity = 1;
+      entry.target.style.transform = "translateY(0)";
+    }
+
+    /* reset tylko gdy element wyjedzie górą */
+    if(!entry.isIntersecting && entry.boundingClientRect.top > 0){
+      entry.target.style.opacity = 0;
+      entry.target.style.transform = "translateY(40px)";
+    }
+
+  });
+},{threshold:0.2});
+
+contactBlocks.forEach((block,index)=>{
+  block.style.opacity = 0;
+  block.style.transform = "translateY(40px)";
+  block.style.transition = `all .8s ease ${index*0.1}s`;
+  contactBlocksObserver.observe(block);
+});
+</script>
+
+<section id="services" class="footer">
+
+  <!-- ===== DESKTOP ===== -->
+  <div class="footer-desktop">
+    <div class="footer-grid">
+
+      <div class="footer-col">
+        <h3>Angelika Raubo Studio Fryzjerskie</h3>
+        <p>
+          Nowoczesne studio fryzjerskie w Bolszewie.
+          Profesjonalne strzyżenia, koloryzacje i indywidualne podejście.
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Godziny otwarcia</h4>
+        <p>pn.–pt. 09:00–18:00</p>
+        <p>sob. 09:00–14:00</p>
+        <p>niedz. zamknięte</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Kontakt</h4>
+        <p>Słoneczna 22, 84-200 Bolszewo</p>
+      <p style="color: white !important; text-decoration: none;">+48 883 551 445</p>
+      </div>
+
+    </div>
+
+  <div class="footer-bottom">
+    &copy; 2026 Angelika Raubo. Wszelkie prawa zastrzeżone. <br> Realizacja: <a href="https://gracjan-gs.github.io/" target="_blank" style="color: rgb(255, 194, 41); z-index: 1000; opacity: 1 !important; text-decoration: none;">Gracjan Śliwiński</a>
+  </div>
+
+  </div>
+
+
+<!-- ===== MOBILE ===== -->
+<div class="footer-mobile">
+
+  <div class="mobile-item">
+    <div class="accordion">
+      <span>Godziny otwarcia</span>
+      <span class="arrow"></span>
+    </div>
+    <div class="panel">
+      <p>pn.–pt. 09:00–18:00</p>
+      <p>sob. 09:00–14:00</p>
+      <p>niedz. <span style="color: red;">zamknięte</span></p>
+    </div>
+  </div>
+
+  <div class="mobile-item">
+    <div class="accordion">
+      <span>Kontakt</span>
+      <span class="arrow"></span>
+    </div>
+    <div class="panel">
+      <p>Słoneczna 22, 84-200 Bolszewo</p>
+      <p><a href="tel:883 551 445" style="color: #ffffff; text-decoration: none;">+48 883 551 445</a></p>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    &copy; 2026 Angelika Raubo. Wszelkie prawa zastrzeżone. <br> Realizacja: <a href="https://gracjan-gs.github.io/" target="_blank" style="color: rgb(255, 223, 164); z-index: 1000; opacity: 1 !important; text-decoration: none;">Gracjan Śliwiński</a>
+  </div>
+
+</div>
+
+</section>
+
+
+
+<style>
+
+/* RESET */
+*{box-sizing:border-box;margin:0;padding:0}
+
+/* ===== FOOTER OGÓLNE ===== */
+
+.footer{
+  background:#000;
+  color:#fff;
+  padding:4rem 2rem 2rem;
+  font-family:inherit;
+}
+
+/* ===== DESKTOP ===== */
+
+.footer-desktop{
+  max-width:1200px;
+  margin:0 auto;
+}
+
+.footer-grid{
+  display:grid;
+  grid-template-columns:2fr 1fr 1fr;
+  gap:4rem;
+  margin-bottom:3rem;
+}
+
+.footer-col h3{
+  font-size:1.8rem;
+  margin-bottom:1rem;
+}
+
+.footer-col h4{
+  font-size:.95rem;
+  text-transform:uppercase;
+  margin-bottom:1rem;
+  letter-spacing:.05em;
+}
+
+.footer-col p{
+  font-size:.9rem;
+  opacity:.75;
+  margin-bottom:.6rem;
+  line-height:1.6;
+}
+
+.footer-bottom{
+  border-top:1px solid rgba(255,255,255,.15);
+  padding-top:1.2rem;
+  font-size:.8rem;
+  opacity:.6;
+  text-align:center;
+}
+
+/* ===== MOBILE (ukryte domyślnie) ===== */
+
+.footer-mobile{
+  display:none;
+}
+
+
+@media (max-width:1000px){
+
+  /* ===== FOOTER ===== */
+
+  .footer-bottom{
+    border:none;
+    padding-top:1.2rem;
+    font-size:.8rem;
+    opacity:.6;
+    text-align:center;
+  }
+
+  .footer-desktop{
+    display:none;
+  }
+
+  .footer-mobile{
+    display:flex;
+    flex-direction:column;
+    gap:1.5rem;
+  }
+
+  .accordion{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:1rem 0;
+    border-bottom:1px solid rgba(255,255,255,.2);
+    cursor:pointer;
+    font-size:1rem;
+  }
+
+  .arrow{
+    width:10px;
+    height:10px;
+    border-right:2px solid #fff;
+    border-bottom:2px solid #fff;
+    transform:rotate(45deg);
+    transition:transform .3s ease;
+  }
+
+  .accordion.active .arrow{
+    transform:rotate(-135deg);
+  }
+
+  .panel{
+    max-height:0;
+    overflow:hidden;
+    transition:max-height .3s ease;
+  }
+
+  .panel p{
+    font-size:.9rem;
+    opacity:.75;
+    padding:.2rem 0;
+  }
+
+  .mobile-book{
+    display:block;
+    text-align:center;
+    padding:1rem;
+    background:#fff;
+    color:#000;
+    text-decoration:none;
+    font-weight:600;
+    margin-top:1rem;
+  }
+
+  /* ===== KONTAKT ===== */
+
+  .contact-section{
+    padding:3rem 0;
+  }
+
+  .contact-container{
+    grid-template-columns:1fr;
+    gap:1rem;
+    padding:0 1.5rem; /* stały margines boczny */
+  }
+
+  .contact-left{
+    gap:.7rem;
+  }
+
+  .contact-card{
+    padding:1.1rem 1.2rem;
+    gap:.8rem;
+  }
+
+  .contact-icon{
+    font-size:20px;
+  }
+
+  .contact-text .label{
+    font-size:.6rem;
+    letter-spacing:.1em;
+  }
+
+  .contact-text .value{
+    font-size:.9rem;
+    line-height:1.35;
+  }
+
+  .review-card{
+    padding:1.2rem 1.3rem;
+    gap:.9rem;
+  }
+
+  .review-top h3{
+    font-size:1rem;
+  }
+
+  .review-label{
+    font-size:.55rem;
+  }
+
+  .review-rating{
+    gap:.5rem;
+  }
+
+  .rating-number{
+    font-size:1.4rem;
+  }
+
+  .rating-stars{
+    font-size:.9rem;
+    letter-spacing:.12rem;
+  }
+
+  .rating-count{
+    font-size:.65rem;
+  }
+
+  .review-description{
+    font-size:.85rem;
+    line-height:1.45;
+  }
+
+  .review-button{
+    font-size:.65rem;
+    padding:.7rem 1.4rem;
+  }
+
+}
+
+</style>
+
+
+
+<script>
+
+document.querySelectorAll(".accordion").forEach(item=>{
+  item.addEventListener("click", function(){
+
+    this.classList.toggle("active");
+
+    const panel = this.nextElementSibling;
+
+    if(panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+
+  });
+});
+
+</script>
+
+
+
+<script>
+const reveals = document.querySelectorAll("#contact .reveal");
+const observer = new IntersectionObserver(entries=>{
+  entries.forEach(entry=>{ if(entry.isIntersecting){ entry.target.classList.add("visible"); } });
+},{threshold:.2});
+reveals.forEach(el=>observer.observe(el));
+
+const footer = document.querySelector("#contact");
+window.addEventListener("scroll", ()=>{
+  const rect = footer.getBoundingClientRect();
+  const offset = rect.top * -0.40;
+  footer.style.backgroundPosition = `center calc(50% + ${offset}px)`;
+},{passive:true});
+</script>
+
+<script>
+const layers = document.querySelectorAll(".layer");
+const sections = document.querySelectorAll("section");
+const dots = document.querySelectorAll(".dot");
+const navbar = document.querySelector(".navbar");
+
+const teamCards = document.querySelectorAll(".service-card");
+const drawTargets = document.querySelectorAll("[data-draw]");
+const pricingCard = document.querySelector(".pricing-card");
+const pricingRows = document.querySelectorAll(".pricing-table tr");
+
+function parallax() {
+  const hero = document.querySelector("#s1");
+  const rect = hero.getBoundingClientRect();
+  const progress = Math.min(Math.max(-rect.top, 0), hero.offsetHeight);
+
+  layers.forEach(layer => {
+    const speed = layer.classList.contains("depth-1") ? 0.15 :
+                  layer.classList.contains("depth-2") ? 0.3 : 0.55;
+    layer.style.transform = `translateY(${progress * speed}px)`;
+  });
+  navbar.classList.toggle("scrolled", window.scrollY > 50);
+}
+
+const sectionObserver = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if(entry.isIntersecting){
+      const index = [...sections].indexOf(entry.target);
+      dots.forEach(d => d.classList.remove("active"));
+      if(dots[index]) dots[index].classList.add("active");
+    }
+  });
+}, { threshold: 0.6 });
+sections.forEach(section => sectionObserver.observe(section));
+
+function updateDraw() {
+  const vh = window.innerHeight || document.documentElement.clientHeight;
+
+  drawTargets.forEach(el => {
+    const rect = el.getBoundingClientRect();
+    const start = vh * 0.9;
+    const end = vh * 0.25;
+    const t = (start - rect.top) / (start - end);
+    const reveal = Math.min(Math.max(t, 0), 1);
+    el.classList.toggle("revealed", reveal > 0.15);
+  });
+
+  if(pricingCard){
+    const rect = pricingCard.getBoundingClientRect();
+    const start = vh * 0.9;
+    const end = vh * 0.2;
+    const t = (start - rect.top) / (start - end);
+    const reveal = Math.min(Math.max(t,0),1);
+
+    pricingCard.classList.toggle("revealed", reveal > 0.1);
+
+    pricingRows.forEach(row=>{
+      const clamped = Math.min(Math.max(reveal,0),1);
+      const eased = Math.pow(clamped,1.6);
+      row.classList.toggle("row-reveal", clamped > 0.05);
+      row.style.setProperty("--draw", `${eased*100}%`);
+    });
+  }
+}
+
+window.addEventListener("scroll", ()=>{ parallax(); updateDraw(); }, {passive:true});
+window.addEventListener("resize", updateDraw);
+parallax();
+updateDraw();
+</script>
+
+<script>
+(() => {
+  const dots = document.querySelectorAll(".dot");
+  const sections = [...dots].map(d => document.querySelector(d.dataset.target));
+
+  dots.forEach((dot, i) => {
+    dot.addEventListener("click", () => { sections[i].scrollIntoView({ behavior: "smooth" }); });
+  });
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const index = sections.indexOf(entry.target);
+        dots.forEach(d => d.classList.remove("active"));
+        if (dots[index]) dots[index].classList.add("active");
+      }
+    });
+  }, { threshold: 0.6 });
+
+  sections.forEach(sec => observer.observe(sec));
+})();
+</script>
+
+<script>
+(() => {
+  const burgerInput = document.getElementById("burger");
+  const burgerLabel = document.querySelector(".buttons__burger");
+  const overlay = document.getElementById("mobileMenu");
+  const links = document.querySelectorAll(".mobile-nav a");
+
+  if(!burgerInput || !overlay || !burgerLabel) return;
+
+  const setMenu = (isOpen) => {
+    document.body.classList.toggle("menu-open", isOpen);
+    burgerInput.checked = isOpen;
+    burgerLabel.setAttribute("aria-expanded", isOpen ? "true" : "false");
+    overlay.setAttribute("aria-hidden", isOpen ? "false" : "true");
+  };
+
+  burgerInput.addEventListener("change", () => setMenu(burgerInput.checked));
+  overlay.addEventListener("click", (e) => { if (e.target === overlay) setMenu(false); });
+  links.forEach(link => link.addEventListener("click", () => setMenu(false)));
+  document.addEventListener("keydown", (e) => { if (e.key === "Escape") setMenu(false); });
+})();
+</script>
+
+
+
+<script>
+(() => {
+  const navbar = document.getElementById("siteNavbar");
+  const menuCheckbox = document.getElementById("menuCheckbox");
+  const mobileNav = document.getElementById("mobileNav");
+  const mobileLinks = mobileNav ? mobileNav.querySelectorAll("a") : [];
+
+  if (!navbar) return;
+
+  const isScrolled = () => window.scrollY > 0;
+  const isMenuOpen = () => !!(mobileNav && mobileNav.classList.contains("open"));
+
+  const syncNavbarBg = () => {
+    navbar.classList.toggle("scrolled", isScrolled() || isMenuOpen());
+  };
+
+  const setMenu = (open) => {
+    if (!menuCheckbox || !mobileNav) return;
+    menuCheckbox.checked = open;
+    mobileNav.classList.toggle("open", open);
+    mobileNav.setAttribute("aria-hidden", open ? "false" : "true");
+    document.body.classList.toggle("menu-open", open);
+    syncNavbarBg(); // klucz: tło przy otwarciu i znikanie po zamknięciu
+  };
+
+  syncNavbarBg();
+  window.addEventListener("scroll", syncNavbarBg, { passive: true });
+
+  if (!menuCheckbox || !mobileNav) return;
+
+  menuCheckbox.addEventListener("change", () => setMenu(menuCheckbox.checked));
+  mobileLinks.forEach(link => link.addEventListener("click", () => setMenu(false)));
+  document.addEventListener("keydown", (e) => { if (e.key === "Escape") setMenu(false); });
+
+  window.addEventListener("resize", () => {
+    if (window.innerWidth > 1024) setMenu(false);
+  });
+})();
+</script>
+  <script>
+    (function(){
+      const reveals = document.querySelectorAll("#services .reveal");
+      const observer = new IntersectionObserver(entries=>{
+        entries.forEach(entry=>{ if(entry.isIntersecting){ entry.target.classList.add("visible"); } });
+      }, {threshold:0.2});
+      reveals.forEach(el=>observer.observe(el));
+    })();
+  </script>
+</section>
+<script>
+  
+</script>
+<script>
+(() => {
+  const items = document.querySelectorAll(".gallery-item, .gallery-more");
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting){ entry.target.classList.add("is-visible"); }
+      else { entry.target.classList.remove("is-visible"); }
+    });
+  }, { threshold: 0.2 });
+
+  items.forEach(el => observer.observe(el));
+})();
+</script>
+
+<script>
+/* PREMIUM SCROLL REVEAL */
+
+const revealElements = document.querySelectorAll('.abc--reveal');
+
+revealElements.forEach((el,i)=>{
+el.style.transitionDelay = (i * 0.07) + "s";
+});
+
+/* kierunek scrolla */
+let lastScroll = window.scrollY;
+let scrollDirection = "down";
+
+window.addEventListener("scroll", () => {
+const currentScroll = window.scrollY;
+scrollDirection = currentScroll > lastScroll ? "down" : "up";
+lastScroll = currentScroll;
+});
+
+const revealObserver = new IntersectionObserver((entries)=>{
+entries.forEach(entry=>{
+
+/* animacja tylko gdy scroll w dół */
+if(entry.isIntersecting && scrollDirection === "down"){
+entry.target.classList.add('show');
+}
+
+/* reset tylko gdy element wyjedzie GÓRĄ */
+if(!entry.isIntersecting && entry.boundingClientRect.top > 0){
+entry.target.classList.remove('show');
+}
+
+});
+},{
+threshold:0.15
+});
+
+revealElements.forEach(el=>{
+revealObserver.observe(el);
+});
+</script>
+
+
+<script>
+const galleryImages = document.querySelectorAll(".gallery-grid img");
+const lightbox = document.getElementById("lightbox");
+const lightboxImg = document.querySelector(".lightbox-img");
+const closeBtn = document.querySelector(".lightbox-close");
+
+if(lightbox && lightboxImg && closeBtn){
+  galleryImages.forEach(img => {
+    img.addEventListener("click", () => {
+      lightbox.classList.add("active");
+      lightboxImg.src = img.src;
+    });
+  });
+
+  closeBtn.addEventListener("click", () => lightbox.classList.remove("active"));
+  lightbox.addEventListener("click", e => { if(e.target === lightbox) lightbox.classList.remove("active"); });
+  document.addEventListener("keydown", e => { if(e.key === "Escape") lightbox.classList.remove("active"); });
+}
+</script>
+<script>
+(() => {
+  const tabs = document.querySelectorAll(".pricing-tabs .tab");
+  const rows = document.querySelectorAll(".pricing-table tr");
+  function show(type){
+    rows.forEach(row=>{ row.style.display = row.dataset.type === type ? "" : "none"; });
+  }
+  show("damskie");
+  tabs.forEach(tab=>{
+    tab.addEventListener("click", ()=>{
+      tabs.forEach(t=>t.classList.remove("active"));
+      tab.classList.add("active");
+      show(tab.dataset.type);
+    });
+  });
+})();
+</script>
+
+
+</body>
+</html>
